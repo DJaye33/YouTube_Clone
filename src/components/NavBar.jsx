@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 
 import Logo from "../logo.png";
 
+import { SearchBar } from "../components";
+
 const NavBar = () => (
   <Stack
     direction="row"
@@ -19,6 +21,7 @@ const NavBar = () => (
     <Link to="/" style={{ display: "flex", alignItems: "center" }}>
       <img src={Logo} alt="logo" height={45} />
     </Link>
+    <SearchBar />
   </Stack>
 );
 
