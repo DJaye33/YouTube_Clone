@@ -2,9 +2,17 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import { Box } from "@mui/material";
 
+import {
+  NavBar,
+  Feed,
+  ChannelDetail,
+  VideoDetail,
+  SearchFeed,
+} from "./components";
+
 const App = () => (
   <Box sx={{ backgroundColor: "#000" }}>
-    {/* {TODO: Add NavBar} */}
+    <NavBar />
     <Routes>
       <Route path="/" exact element={<Feed />} />
       <Route path="/video/:id" element={<VideoDetail />} />
